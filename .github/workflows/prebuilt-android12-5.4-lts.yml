@@ -1,0 +1,47 @@
+name: 🏗️ PREBUILT_A12-5.4-LTS
+on:
+  schedule:
+    - cron: "59 23 * * SUN"
+  workflow_dispatch:
+
+jobs:
+
+  PREBUILT_A12_5_4_LTS:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "👨‍🔧 Setup build environment"
+        run: curl https://raw.githubusercontent.com/akhilnarang/scripts/master/setup/android_build_env.sh | bash -
+      - name: "⏳ Clone Repo, Sync & Build."
+        run: repo init -u https://gitlab.com/xprateek/kernel_manifest -b common-android12-5.4-lts --depth=1 && repo sync && LTO=thin BUILD_CONFIG=common/build.config.gki.aarch64 build/build.sh
+      - name: "📄 Generating Release Tag"
+        id: tag
+        run: echo "release_tag=xprateek/PREBUILT_A12-5.4-LTS-$(date +"%Y.%m.%d")" >> $GITHUB_OUTPUT
+      - name: "🗃️ Create Release"
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.tag.outputs.release_tag }}
+          files: /home/runner/work/aosp_kernel_gki_builder/aosp_kernel_gki_builder/out/android12-5.10/dist/Image
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          repository: xprateek/aosp_kernel_gki_builder
+          TOKEN: ${{ secrets.TOKEN }}
+
+  PREBUILT_A12_5_4_LTS_KSU:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "👨‍🔧 Setup build environment"
+        run: curl https://raw.githubusercontent.com/akhilnarang/scripts/master/setup/android_build_env.sh | bash -
+      - name: "⏳ Clone Repo, Sync & Build."
+        run: repo init -u https://gitlab.com/xprateek/kernel_manifest -b common-android12-5.4-lts --depth=1 && repo sync && cd common && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash - && cd ../ && LTO=thin BUILD_CONFIG=common/build.config.gki.aarch64 build/build.sh 
+      - name: "📄 Generating Release Tag"
+        id: tag
+        run: echo "release_tag=xprateek/PREBUILT_A12-5.4-LTS_KSU-$(date +"%Y.%m.%d")" >> $GITHUB_OUTPUT
+      - name: "🗃️ Create Release"
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.tag.outputs.release_tag }}
+          files: /home/runner/work/aosp_kernel_gki_builder/aosp_kernel_gki_builder/out/android12-5.10/dist/Image
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          repository: xprateek/aosp_kernel_gki_builder
+          TOKEN: ${{ secrets.TOKEN }}
