@@ -1,5 +1,5 @@
-KERNEL_SOURCE=
-KERNEL_SOURCE_BRANCH=
+KERNEL_SOURCE=https://git.codelinaro.org/clo/la/kernel/msm-5.10.git
+KERNEL_SOURCE_BRANCH=KERNEL.PLATFORM.1.0.r1-16800-kernel.0
 KERNEL_CONFIG=gki_defconfig
 KERNEL_IMAGE_NAME=Image
 ARCH=arm64
