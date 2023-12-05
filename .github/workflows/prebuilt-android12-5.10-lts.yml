@@ -1,7 +1,5 @@
 name: 🏗️ PREBUILT_A12-5.10-LTS
 on:
-  schedule:
-    - cron: "59 23 * * SUN"
   workflow_dispatch:
 
 jobs:

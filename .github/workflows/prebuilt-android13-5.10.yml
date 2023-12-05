@@ -1,7 +1,5 @@
 name: 🏗️ PREBUILT_A13-5.10
 on:
-  schedule:
-    - cron: "59 23 * * SUN"
   workflow_dispatch:
 
 jobs:

@@ -1,7 +1,5 @@
 name: 🏗️ PREBUILT_A15-6.1
 on:
-  schedule:
-    - cron: "59 23 * * SUN"
   workflow_dispatch:
 
 jobs:

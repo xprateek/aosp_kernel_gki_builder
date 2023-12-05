@@ -1,7 +1,5 @@
 name: 🏗️ PREBUILT_A14-6.1-LTS
 on:
-  schedule:
-    - cron: "59 23 * * SUN"
   workflow_dispatch:
 
 jobs:
