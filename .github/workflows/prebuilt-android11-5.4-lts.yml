@@ -18,7 +18,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ steps.tag.outputs.release_tag }}
-          files: /home/runner/work/aosp_kernel_gki_builder/aosp_kernel_gki_builder/out/android12-5.10/dist/Image
+          files: /home/runner/work/aosp_kernel_gki_builder/aosp_kernel_gki_builder/out/android11-5.4/dist/Image
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           repository: xprateek/aosp_kernel_gki_builder
@@ -38,7 +38,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ steps.tag.outputs.release_tag }}
-          files: /home/runner/work/aosp_kernel_gki_builder/aosp_kernel_gki_builder/out/android12-5.10/dist/Image
+          files: /home/runner/work/aosp_kernel_gki_builder/aosp_kernel_gki_builder/out/android11-5.4/dist/Image
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           repository: xprateek/aosp_kernel_gki_builder
