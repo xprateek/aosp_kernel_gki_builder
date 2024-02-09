@@ -4,7 +4,7 @@ on:
 
 jobs:
 
-  PREBUILT_A13_5_15_LTS:
+  PREBUILT_A13_5_15:
     runs-on: ubuntu-latest
     steps:
       - name: "👨‍🔧 Setup build environment"
@@ -24,7 +24,7 @@ jobs:
           repository: xprateek/aosp_kernel_gki_builder
           TOKEN: ${{ secrets.TOKEN }}
 
-  PREBUILT_A13_5_15_LTS_KSU:
+  PREBUILT_A13_5_15_KSU:
     runs-on: ubuntu-latest
     steps:
       - name: "👨‍🔧 Setup build environment"
