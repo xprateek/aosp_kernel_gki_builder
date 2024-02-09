@@ -34,5 +34,7 @@
 
 #### TODO
 
-<pre>  -- Update Scripts / added support build bazel (Android 13+)
+<pre>  
+  -- Update Scripts / added support build bazel (Android 13+)
+  -- android15-6.6+ Required more storage (PREBUILTS)
 </pre>
