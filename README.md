@@ -12,6 +12,7 @@
 | **android14-5.15** | [![🏗️ PREBUILT_A14-5.15](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/prebuilt-android14-5.15.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/prebuilt-android14-5.15.yml) | [![🏗️ PREBUILT_A14-5.15-LTS](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/prebuilt-android14-5.15-lts.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/prebuilt-android14-5.15-lts.yml) |
 | **android14-6.1** | [![🏗️ PREBUILT_A14-6.1](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/prebuilt-android14-6.1.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/prebuilt-android14-6.1.yml) | [![🏗️ PREBUILT_A14-6.1-LTS](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/prebuilt-android14-6.1-lts.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/prebuilt-android14-6.1-lts.yml) |
 | **android15-6.1** | [![🏗️ PREBUILT_A15-6.1](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/prebuilt-android15-6.1.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/prebuilt-android15-6.1.yml) |     |
+| **android15-6.6** |  [![🏗️ PREBUILT_A15-6.6](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/prebuilt-android15-6.6.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/prebuilt-android15-6.6.yml)   |     |
 |     |     |     |
 
 &nbsp;
@@ -28,9 +29,10 @@
 | **android14-5.15** | [![🏗️ BUILD ANDROID14-5.15](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android14-5.15.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android14-5.15.yml) | [![🏗️ BUILD ANDROID14-5.15-LTS](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android14-5.15-lts.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android14-5.15-lts.yml) |
 | **android14-6.1** | [![🏗️ BUILD ANDROID14-6.1](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android14-6.1.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android14-6.1.yml) | [![🏗️ BUILD ANDROID14-6.1-LTS](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android14-6.1-lts.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android14-6.1-lts.yml) |
 | **android15-6.1** | [![🏗️ BUILD ANDROID15-6.1](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android15-6.1.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android15-6.1.yml) |     |
+| **android15-6.6** |  [![🏗️ BUILD ANDROID15-6.6](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android15-6.6.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android15-6.6.yml)   |     |
 |     |     |     |
 
 #### TODO
-<pre>
-  -- Update Scripts / added support build bazel (Android 13+)
+
+<pre>  -- Update Scripts / added support build bazel (Android 13+)
 </pre>
