@@ -20,7 +20,7 @@
 |     |     |     |
 | --- | --- | --- |
 | **Kernel Branch** | **CI-CD** | **CI-CD-LTS** |
-| **android-mainline** | [![🏗️ BUILD MAINLINE-KERNEL](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android-mainline.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android-mainline.yml) | [![🏗️ BUILD MAINLINE-KERNEL](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android-mainline.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android-mainline.yml) |
+| **android-mainline** | [![🏗️ BUILD MAINLINE-KERNEL](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android-mainline.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android-mainline.yml) | - |
 | **android11-5.4** | [![🏗️ BUILD ANDROID11-5.4](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android11-5.4.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android11-5.4.yml) | [![🏗️ BUILD ANDROID11-5.4-LTS](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android11-5.4-lts.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android11-5.4-lts.yml) |
 | **android12-5.4** | [![🏗️ BUILD ANDROID12-5.4](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android12-5.4.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android12-5.4.yml) | [![🏗️ BUILD ANDROID12-5.4-LTS](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android12-5.4-lts.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android12-5.4-lts.yml) |
 | **android12-5.10** | [![🏗️ BUILD ANDROID12-5.10](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android12-5.10.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android12-5.10.yml) | [![🏗️ BUILD ANDROID12-5.10-LTS](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android12-5.10-lts.yml/badge.svg)](https://github.com/xprateek/aosp_kernel_gki_builder/actions/workflows/build-android12-5.10-lts.yml) |
@@ -34,7 +34,7 @@
 
 #### TODO
 
-<pre>  
+<pre>
   -- Update Scripts / added support build bazel (Android 13+)
   -- android15-6.6+ Required more storage (PREBUILTS)
 </pre>
