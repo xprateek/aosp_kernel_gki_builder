@@ -15,7 +15,7 @@ jobs:
         id: tag
         run: echo "release_tag=xprateek/PREBUILT_A12-5.4-LTS-$(date +"%Y.%m.%d")" >> $GITHUB_OUTPUT
       - name: "🗃️ Create Release"
-        uses:  softprops/action-gh-release@ 4634c16e79c963813287e889244c50009e7f0981
+        uses:  softprops/action-gh-release@4634c16e79c963813287e889244c50009e7f0981
         with:
           tag_name: ${{ steps.tag.outputs.release_tag }}
           files: /home/runner/work/aosp_kernel_gki_builder/aosp_kernel_gki_builder/out/android12-5.4/dist/Image
@@ -35,7 +35,7 @@ jobs:
         id: tag
         run: echo "release_tag=xprateek/PREBUILT_A12-5.4-LTS_KSU-$(date +"%Y.%m.%d")" >> $GITHUB_OUTPUT
       - name: "🗃️ Create Release"
-        uses:  softprops/action-gh-release@ 4634c16e79c963813287e889244c50009e7f0981
+        uses:  softprops/action-gh-release@4634c16e79c963813287e889244c50009e7f0981
         with:
           tag_name: ${{ steps.tag.outputs.release_tag }}
           files: /home/runner/work/aosp_kernel_gki_builder/aosp_kernel_gki_builder/out/android12-5.4/dist/Image
