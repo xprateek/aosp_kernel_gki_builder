@@ -5,12 +5,12 @@ KERNEL_IMAGE_NAME=Image
 ARCH=arm64
 
 ENABLE_CLANG=true
-USE_AOSP_CLANG=true
+USE_AOSP_CLANG=false
 AOSP_CLANG_SYSTEM=linux-x86
 AOSP_CLANG_BRANCH=main
 AOSP_CLANG_VERSION=stable
-USE_CUSTOM_CLANG=false
-CUSTOM_CLANG_SOURCE=https://github.com/ZyCromerZ/Clang/releases/download/14.0.6-20231003-release/Clang-14.0.6-20231003.tar.gz
+USE_CUSTOM_CLANG=true
+CUSTOM_CLANG_SOURCE=https://data.prateekmaru.workers.dev/0:/neutron-clang-05012024.tar.gz
 CUSTOM_CLANG_BRANCH=
 
 ENABLE_GCC=true
@@ -47,4 +47,4 @@ NEED_DTBO=false
 BUILDER_HOST=ci
 
 TC_CUSTOM_CMDS:CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-gnu-
-EXTRA_CMDS:CC=clang
+EXTRA_CMDS:CC=clang LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump READELF=llvm-readelf STRIP=llvm-strip
