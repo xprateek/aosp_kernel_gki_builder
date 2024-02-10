@@ -10,7 +10,8 @@ AOSP_CLANG_SYSTEM=linux-x86
 AOSP_CLANG_BRANCH=main
 AOSP_CLANG_VERSION=stable
 USE_CUSTOM_CLANG=true
-CUSTOM_CLANG_SOURCE=https://github.com/ZyCromerZ/Clang/releases/download/17.0.0-20230725-release/Clang-17.0.0-20230725.tar.gz
+CUSTOM_CLANG_SOURCE=https://github.com/ZyCromerZ/Clang/releases/download/14.0.6-20231003-release/Clang-14.0.6-20231003.tar.gz
+
 CUSTOM_CLANG_BRANCH=
 
 ENABLE_GCC=true
