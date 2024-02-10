@@ -10,7 +10,7 @@ AOSP_CLANG_SYSTEM=linux-x86
 AOSP_CLANG_BRANCH=main
 AOSP_CLANG_VERSION=stable
 USE_CUSTOM_CLANG=true
-CUSTOM_CLANG_SOURCE=https://data.prateekmaru.workers.dev/0:/neutron-clang-05012024.tar.gz
+CUSTOM_CLANG_SOURCE=https://github.com/xprateek/clang-mirror/releases/download/05-01-2024/neutron-clang-05012024.tar.gz
 CUSTOM_CLANG_BRANCH=
 
 ENABLE_GCC=true
